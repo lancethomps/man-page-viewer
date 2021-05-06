@@ -1,8 +1,8 @@
 <idea-plugin>
-    <id>man-page-viewer</id>
-    <name>Man page viewer</name>
+    <id>man-page-viewer-custom</id>
+    <name>Man page viewer custom</name>
     <version>0.1.1</version>
-    <vendor email="dmitry.kandalov@gmail.com" url="https://github.com/dkandalov/man-page-viewer">Dmitry Kandalov</vendor>
+    <vendor email="lthompson05@gmail.com" url="https://github.com/lancethomps/man-page-viewer">Lance Thompson</vendor>
 
     <description><![CDATA[
         Plugin for viewing man pages from IDE.

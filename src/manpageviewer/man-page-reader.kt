@@ -6,8 +6,7 @@ import java.util.concurrent.TimeUnit.MILLISECONDS
 fun readManPage(term: String): String {
     // Only include "System calls" and "Library functions" sections
     // (see https://en.wikipedia.org/wiki/Man_page#Manual_sections)
-    val manSections = "2:3"
-    val (exitCode, stdout, stderr) = executeCommand("man", "-S", manSections, term)
+    val (exitCode, stdout, stderr) = executeCommand("man", term)
     return if (exitCode == 0) {
         val manPage = stdout.replace(Regex(".\b"), "")
         if (manPage.isEmpty()) "No man entry" else manPage
